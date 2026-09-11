@@ -19,7 +19,7 @@ used. Sign-in is LinkedIn, Google, or a magic link. There is no password.
 **Claude Code**
 
 ```sh
-/plugin marketplace add kumospace/fonzi-agent-plugins
+/plugin marketplace add kumospace/agent-skills
 /plugin install fonzi-talent@fonzi
 /plugin install fonzi-recruiter@fonzi
 ```
@@ -38,8 +38,8 @@ local use, clone this repository and point Cursor at `plugins/talent` or
 **skills.sh**
 
 ```sh
-npx skills add kumospace/fonzi-agent-plugins --skill fonzi-talent
-npx skills add kumospace/fonzi-agent-plugins --skill fonzi-recruiter
+npx skills add kumospace/agent-skills --skill fonzi-talent
+npx skills add kumospace/agent-skills --skill fonzi-recruiter
 ```
 
 ## Layout

@@ -9,6 +9,6 @@
     "url": "https://fonzi.ai"
   },
   "homepage": "https://talent.fonzi.ai/mcp/docs",
-  "repository": "https://github.com/kumospace/fonzi-agent-plugins",
+  "repository": "https://github.com/kumospace/agent-skills",
   "keywords": ["fonzi", "jobs", "careers", "engineering", "interviews"]
 }
