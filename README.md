@@ -10,14 +10,14 @@ connects to the Fonzi Talent MCP server at https://talent.fonzi.ai/mcp and
 ships the skills that teach your agent how to use it. Sign-in is LinkedIn,
 Google, or a magic link. There is no password.
 
-Hiring teams want [Fonzi Recruiter](https://github.com/kumospace/fonzi-recruiter).
+Hiring teams want [Fonzi Recruiter](https://github.com/kumospace/recruiter).
 
 ## Install
 
 **Claude Code**
 
 ```sh
-/plugin marketplace add kumospace/fonzi-talent
+/plugin marketplace add kumospace/talent
 /plugin install fonzi-talent@fonzi-talent
 ```
 
@@ -34,7 +34,7 @@ repository into `~/.cursor/plugins/local/`.
 **skills.sh**
 
 ```sh
-npx skills add kumospace/fonzi-talent
+npx skills add kumospace/talent
 ```
 
 Installs every skill in this repository. Connect the MCP server in your agent
