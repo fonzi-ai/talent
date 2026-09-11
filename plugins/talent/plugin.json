@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fonzi-talent",
+  "version": "1.0.0",
+  "description": "Meet top AI startups from the AI you already use. Apply to Fonzi, keep your profile current, and approve Interview Requests with the salary upfront.",
+  "author": {
+    "name": "Fonzi",
+    "email": "humans@fonzi.ai",
+    "url": "https://fonzi.ai"
+  },
+  "homepage": "https://talent.fonzi.ai/mcp/docs",
+  "repository": "https://github.com/kumospace/fonzi-agent-plugins",
+  "keywords": ["fonzi", "jobs", "careers", "engineering", "interviews"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Fonzi Talent",
+        "shortDescription": "Meet top AI startups from the AI you already use. Apply to Fonzi, keep your profile current, and approve Interview Requests with the salary upfront.",
+        "longDescription": "Fonzi matches exceptional engineers with AI startups and high-growth tech companies. Apply once. Companies that want to meet you send an Interview Request with the role, base salary, and context upfront. You approve every meeting. This plugin brings Fonzi Talent to your agent. Ask what’s next and Fonzi picks up where you left off. Apply and answer the follow-up questions in conversation. Keep your profile and resume current. Browse the Companies hiring on Fonzi and mark the ones you want to hear from. When Interview Requests arrive, see the Company, role, and salary, ask questions, and accept or decline without leaving the conversation. Pause when you’re not looking and resume when you are. Fonzi acts on your account only, shows you every change before saving it, and is free for engineers.",
+        "developerName": "Fonzi",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "Hey Fonzi, what’s next for me?",
+          "I want to apply to Fonzi.",
+          "Which fintech companies are hiring on Fonzi right now?",
+          "Do I have any Interview Requests?"
+        ],
+        "brandColor": "#2a8864",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "websiteURL": "https://fonzi.ai",
+        "privacyPolicyURL": "https://fonzi.ai/privacy",
+        "termsOfServiceURL": "https://fonzi.ai/terms"
+      }
+    }
+  }
+}

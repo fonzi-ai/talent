@@ -1,0 +1,14 @@
+{
+  "name": "fonzi-talent",
+  "displayName": "Fonzi Talent",
+  "version": "1.0.0",
+  "description": "Meet top AI startups from the AI you already use. Apply to Fonzi, keep your profile current, and approve Interview Requests with the salary upfront.",
+  "author": {
+    "name": "Fonzi",
+    "email": "humans@fonzi.ai",
+    "url": "https://fonzi.ai"
+  },
+  "homepage": "https://talent.fonzi.ai/mcp/docs",
+  "repository": "https://github.com/kumospace/fonzi-agent-plugins",
+  "keywords": ["fonzi", "jobs", "careers", "engineering", "interviews"]
+}
