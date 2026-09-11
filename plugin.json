@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "fonzi-talent",
+  "name": "talent",
   "version": "1.0.0",
   "description": "Meet top AI startups from the AI you already use. Apply to Fonzi, keep your profile current, and approve Interview Requests with the salary upfront.",
   "author": {
