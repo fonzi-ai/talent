@@ -1,61 +1,57 @@
-# Fonzi agent plugins
+# Fonzi Talent
 
-Fonzi is the world’s most connected recruiter, matching exceptional engineers
-with AI startups and high-growth tech companies. This repository packages Fonzi
-for the agents people already use.
+Fonzi matches exceptional engineers with AI startups and high-growth tech
+companies. Apply once. Companies that want to meet you send an Interview
+Request with the role, base salary, and context upfront. You approve every
+meeting. Fonzi is free for engineers.
 
-Two plugins, one per audience:
+This repository packages Fonzi Talent for the agents you already use. It
+connects to the Fonzi Talent MCP server at https://talent.fonzi.ai/mcp and
+ships the skills that teach your agent how to use it. Sign-in is LinkedIn,
+Google, or a magic link. There is no password.
 
-| Plugin | For | MCP server |
-| --- | --- | --- |
-| [Fonzi Talent](plugins/talent) | Engineers looking for their next role | https://talent.fonzi.ai/mcp |
-| [Fonzi Recruiter](plugins/recruiting) | Hiring teams working with Fonzi | https://recruiting.fonzi.ai/mcp |
-
-Both servers use OAuth. The host opens Fonzi’s sign-in the first time a tool is
-used. Sign-in is LinkedIn, Google, or a magic link. There is no password.
+Hiring teams want [Fonzi Recruiter](https://github.com/kumospace/fonzi-recruiter).
 
 ## Install
 
 **Claude Code**
 
 ```sh
-/plugin marketplace add kumospace/agent-skills
-/plugin install fonzi-talent@fonzi
-/plugin install fonzi-recruiter@fonzi
+/plugin marketplace add kumospace/fonzi-talent
+/plugin install fonzi-talent@fonzi-talent
 ```
 
 **Codex and ChatGPT**
 
-Fonzi Talent and Fonzi Recruiter are submitted to the plugin directory. Until
-they are listed, add this repository as a marketplace from the Plugins tab.
+Fonzi Talent is submitted to the plugin directory. Until it is listed, add
+this repository as a marketplace from the Plugins tab.
 
 **Cursor**
 
-Fonzi Talent and Fonzi Recruiter are submitted to the Cursor Marketplace. For
-local use, clone this repository and point Cursor at `plugins/talent` or
-`plugins/recruiting` from `~/.cursor/plugins/local/`.
+Fonzi Talent is submitted to the Cursor Marketplace. For local use, clone this
+repository into `~/.cursor/plugins/local/`.
 
 **skills.sh**
 
 ```sh
-npx skills add kumospace/agent-skills --skill fonzi-talent
-npx skills add kumospace/agent-skills --skill fonzi-recruiter
+npx skills add kumospace/fonzi-talent
 ```
+
+Installs every skill in this repository. Connect the MCP server in your agent
+separately; the skills tell the agent how.
 
 ## Layout
 
 ```
-.claude-plugin/marketplace.json      Claude Code marketplace
-.agents/plugins/marketplace.json     Codex and ChatGPT marketplace
-plugins/<audience>/
-  plugin.json                        Agent Plugins manifest (Codex, ChatGPT, Cursor)
-  mcp.json                           Agent Plugins MCP config
-  .claude-plugin/plugin.json         Claude Code manifest
-  .mcp.json                          Claude Code MCP config
-  skills/<name>/SKILL.md             Shared by every host
-  assets/logo.png                    512px Fonzi mark for directory listings
-assets/                              Source logo
-scripts/check.sh                     Validates every format above
+plugin.json                        Agent Plugins manifest (Codex, ChatGPT, Cursor)
+mcp.json                           Agent Plugins MCP config
+.claude-plugin/plugin.json         Claude Code manifest
+.claude-plugin/marketplace.json    Claude Code marketplace
+.mcp.json                          Claude Code MCP config
+.agents/plugins/marketplace.json   Codex and ChatGPT marketplace
+skills/<name>/SKILL.md             Shared by every host
+assets/                            Fonzi mark, source and 512px
+scripts/check.sh                   Validates every format above
 ```
 
 Skills are the shared asset. Every host reads the same `SKILL.md` files. The
@@ -65,16 +61,15 @@ format and Codex, ChatGPT, and Cursor read the open
 
 ## Contributing
 
-- Plugin names (`fonzi-talent`, `fonzi-recruiter`) are permanent identifiers
-  across every directory. Do not rename them.
-- Keep both dialects of each manifest and MCP file in sync.
-- Bump `version` in both manifests when a plugin changes. Directory listings
+- The plugin name `fonzi-talent` is a permanent identifier across every
+  directory. Do not rename it.
+- Keep both dialects of the manifest and MCP file in sync.
+- Bump `version` in both manifests when the plugin changes. Directory listings
   re-review on every release.
 - Run `scripts/check.sh` before opening a pull request.
 
 ## Links
 
-- Talent docs: https://talent.fonzi.ai/mcp/docs
-- Recruiter docs: https://recruiting.fonzi.ai/mcp/docs
+- Docs: https://talent.fonzi.ai/mcp/docs
 - Support: https://fonzi.ai/support
 - Privacy: https://fonzi.ai/privacy

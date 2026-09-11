@@ -1,27 +1,20 @@
 {
-  "name": "fonzi",
+  "name": "fonzi-talent",
   "owner": {
     "name": "Fonzi",
     "email": "humans@fonzi.ai",
     "url": "https://fonzi.ai"
   },
   "metadata": {
-    "description": "Fonzi Talent for engineers and Fonzi Recruiter for hiring teams."
+    "description": "Fonzi Talent for engineers. Meet top AI startups from the AI you already use."
   },
   "plugins": [
     {
       "name": "fonzi-talent",
-      "source": "./plugins/talent",
+      "source": "./",
       "description": "Meet top AI startups from the AI you already use. Apply to Fonzi, keep your profile current, and approve Interview Requests with the salary upfront.",
       "category": "productivity",
       "homepage": "https://talent.fonzi.ai/mcp/docs"
-    },
-    {
-      "name": "fonzi-recruiter",
-      "source": "./plugins/recruiting",
-      "description": "Meet vetted engineers ready to interview. Find Candidates, place Interview Requests, and manage your Jobs and team on Fonzi.",
-      "category": "productivity",
-      "homepage": "https://recruiting.fonzi.ai/mcp/docs"
     }
   ]
 }

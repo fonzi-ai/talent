@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "fonzi-recruiter": {
-      "type": "http",
-      "url": "https://recruiting.fonzi.ai/mcp"
-    }
-  }
-}
