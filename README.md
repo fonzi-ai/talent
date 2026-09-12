@@ -10,25 +10,25 @@ connects to the Fonzi Talent MCP server at https://talent.fonzi.ai/mcp and
 ships the skills that teach your agent how to use it. Sign-in is LinkedIn,
 Google, or a magic link. There is no password.
 
-Hiring teams want [Fonzi Recruiter](https://github.com/kumospace/recruiter).
+Hiring teams want [Fonzi Recruiter](https://github.com/fonzi-ai/recruiter).
 
 ## Install
 
 **Claude Code**
 
 ```sh
-/plugin marketplace add kumospace/plugins
+/plugin marketplace add fonzi-ai/plugins
 /plugin install talent@fonzi
 ```
 
 The `fonzi` marketplace lives at
-[kumospace/plugins](https://github.com/kumospace/plugins) and lists both Fonzi
+[fonzi-ai/plugins](https://github.com/fonzi-ai/plugins) and lists both Fonzi
 plugins. Adding it once is enough for either.
 
 **Codex and ChatGPT**
 
 Fonzi Talent is submitted to the plugin directory. Until it is listed, add
-[kumospace/plugins](https://github.com/kumospace/plugins) as a marketplace from
+[fonzi-ai/plugins](https://github.com/fonzi-ai/plugins) as a marketplace from
 the Plugins tab.
 
 **Cursor**
@@ -39,7 +39,7 @@ repository into `~/.cursor/plugins/local/`.
 **skills.sh**
 
 ```sh
-npx skills add kumospace/talent
+npx skills add fonzi-ai/talent
 ```
 
 Installs every skill in this repository. Connect the MCP server in your agent
@@ -61,7 +61,7 @@ Skills are the shared asset. Every host reads the same `SKILL.md` files. The
 manifest and MCP files exist in two dialects because Claude Code reads its own
 format and Codex, ChatGPT, and Cursor read the open
 [Agent Plugins](https://agent-plugins.org) standard. Marketplace files live in
-[kumospace/plugins](https://github.com/kumospace/plugins), which points here.
+[fonzi-ai/plugins](https://github.com/fonzi-ai/plugins), which points here.
 
 ## Contributing
 

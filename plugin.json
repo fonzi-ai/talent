@@ -9,7 +9,7 @@
     "url": "https://fonzi.ai"
   },
   "homepage": "https://talent.fonzi.ai/mcp/docs",
-  "repository": "https://github.com/kumospace/talent",
+  "repository": "https://github.com/fonzi-ai/talent",
   "keywords": ["fonzi", "jobs", "careers", "engineering", "interviews"],
   "extensions": {
     "com.openai": {
