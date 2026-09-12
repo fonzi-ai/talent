@@ -1,5 +1,5 @@
 ---
-name: fonzi-talent
+name: job-search-with-fonzi
 description: Use when an engineer wants to apply to Fonzi, ask what’s next in their search, browse the companies hiring on Fonzi, update their profile or resume, pause or resume their search, or review and respond to Interview Requests. Works through the Fonzi Talent MCP server.
 ---
 
